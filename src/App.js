@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import WelcomePage from './components/WelcomePage'
 import NoWelcomePage from './components/NoWelcomePage'
@@ -14,10 +14,24 @@ import TalkingBeforeRide from './components/TalkingBeforeRide'
 import EndingSong from './components/EndingSong'
 import FinalFight from './components/FinalFight'
 import KissEnd from './components/KissEnd'
+import { useDispatch, useSelector } from 'react-redux'
+import FinalSong from './assets/finalSong.mp3'
 
 function App() {
+  const song = useSelector((state) => state.song.song)
+  const audioRef = useRef()
+
+  useEffect(() => {
+    if (song) {
+      setTimeout(() => {
+        audioRef.current.play()
+      }, 5000)
+    }
+  }, [song])
+
   return (
     <div>
+      <audio src={FinalSong} ref={audioRef} loop></audio>
       <BrowserRouter>
         <Routes>
           <Route path="/minions" element={<WelcomePage />} />

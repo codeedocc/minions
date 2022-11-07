@@ -10,6 +10,15 @@ function TurnOffTheLights() {
   const navigate = useNavigate()
   const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
+  const [isListened, setIsListened] = useState(false)
+
+  const nextPage = () => {
+    if (!isListened) {
+      alert('Давай не будем обижать Желтка, послушай его трек 👿')
+    } else {
+      navigate('/minions/RoadToGuitar')
+    }
+  }
 
   useEffect(() => {
     if (scroll) {
@@ -19,6 +28,7 @@ function TurnOffTheLights() {
 
   const playOrPause = () => {
     setIsPlaying((prev) => !prev)
+    setIsListened(true)
     window.scrollTo(0, 0)
 
     if (!isPlaying) {
@@ -46,7 +56,7 @@ function TurnOffTheLights() {
             <audio src={Music} ref={audioRef}></audio>
             <span onClick={() => playOrPause()}>Включить трек</span>
             &nbsp; &nbsp; &nbsp;
-            <span onClick={() => navigate('/minions/RoadToGuitar')}>Мда</span>
+            <span onClick={() => nextPage()}>Мда</span>
           </div>
         </div>
       ) : (

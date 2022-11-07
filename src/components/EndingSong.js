@@ -7,46 +7,22 @@ import { useDispatch, useSelector } from 'react-redux'
 import { startSong } from '../features/song/songSlice'
 
 function EndingSong() {
-  const [isPlaying, setIsPlaying] = useState(false)
   const [isStarted, setIsStarted] = useState(false)
   const navigate = useNavigate()
-  const audioRefJonas = useRef()
+  const audioRef = useRef()
   const dispatch = useDispatch()
-  const song = useSelector((state) => state.song.song)
   const scroll = useSelector((state) => state.scroll.scroll)
 
   useEffect(() => {
     if (scroll) {
       window.scrollTo(0, 0)
+      dispatch(startSong())
     }
   }, [scroll])
-
-  // useEffect(() => {
-  //   if (!isPlaying) {
-  //     setTimeout(() => {
-  //       audioRefJonas.current.play()
-  //     }, 5000)
-  //   }
-  // }, [isPlaying])
-
-  useEffect(() => {
-    if (!song) {
-      // dispatch(startSong())
-      setTimeout(() => {
-        audioRefJonas.current.play()
-      }, 5000)
-    }
-  }, [song])
 
   const letsRide = () => {
     setIsStarted((prev) => !prev)
     window.scrollTo(0, 0)
-  }
-
-  const nextStep = () => {
-    setIsPlaying(false)
-
-    navigate('/minions/EndingSong')
   }
 
   return (
@@ -63,7 +39,7 @@ function EndingSong() {
               улицу. Сейчас заиграет музыка, когда услышишь в ней слова,
               посмотри в окно.
             </span>
-            <audio src={FinalSong} ref={audioRefJonas} loop></audio>
+            <audio src={FinalSong} ref={audioRef} loop></audio>
           </div>
           <div className="main-buttons">
             <span onClick={() => letsRide()}>Посмотреть в окно</span>
@@ -80,7 +56,7 @@ function EndingSong() {
               Как бы не было холодно вокруг, никогда не теряй тепло внутри себя,
               ты классная :)
             </span>
-            <audio src={FinalSong} ref={audioRefJonas} loop></audio>
+            <audio src={FinalSong} ref={audioRef} loop></audio>
           </div>
           <div className="main-buttons">
             <span onClick={() => navigate('/minions/KissEnd')}>Okay</span>
