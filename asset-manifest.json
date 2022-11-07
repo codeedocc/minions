@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/minions/static/css/main.ff1c216e.css",
+    "main.js": "/minions/static/js/main.4280e790.js",
+    "static/media/beforeRide.gif": "/minions/static/media/beforeRide.eda8352c46f25be626a9.gif",
+    "static/media/dadju.mp3": "/minions/static/media/dadju.4a7b5570eeecc3431fc1.mp3",
+    "static/media/stasMikhailov.gif": "/minions/static/media/stasMikhailov.96157671bdc7d0fda321.gif",
+    "static/media/fastCar.mp3": "/minions/static/media/fastCar.ef90b139dc731a2474ad.mp3",
+    "static/media/finalSong.mp3": "/minions/static/media/finalSong.ab90cb7ea07371597b91.mp3",
+    "static/media/heart.gif": "/minions/static/media/heart.10df3b53328bcc207ea1.gif",
+    "static/media/chicken.webp": "/minions/static/media/chicken.069832390a169704b920.webp",
+    "static/media/scharf.gif": "/minions/static/media/scharf.2d174ce64ca5c6cc4509.gif",
+    "static/media/please.gif": "/minions/static/media/please.3e209968a36adf0f4d4d.gif",
+    "static/media/playingGuitar.webp": "/minions/static/media/playingGuitar.9bd26d747456a3db31bb.webp",
+    "static/media/hello.gif": "/minions/static/media/hello.79014a6b74c7771199e7.gif",
+    "static/media/gelendwagen.mp3": "/minions/static/media/gelendwagen.a65f49e3934aa1890521.mp3",
+    "static/media/directerBy.mp3": "/minions/static/media/directerBy.2e3d905be9d57753a83b.mp3",
+    "static/media/mda.gif": "/minions/static/media/mda.85817d54a467f34b9195.gif",
+    "static/media/startGuitar.webp": "/minions/static/media/startGuitar.0857d60e118d5b045964.webp",
+    "static/media/destroy.webp": "/minions/static/media/destroy.f3d2c1b2303a2894d7eb.webp",
+    "static/media/riding.gif": "/minions/static/media/riding.a384999d0776a263e747.gif",
+    "static/media/music.webp": "/minions/static/media/music.96f5cd50cc6cf0c2ff06.webp",
+    "static/media/wonder.webp": "/minions/static/media/wonder.210f7c3ee4754884020f.webp",
+    "static/media/argue.gif": "/minions/static/media/argue.229fc2fec26f716291e7.gif",
+    "static/media/talk.webp": "/minions/static/media/talk.2f6c296a6b253777e98e.webp",
+    "static/media/message.webp": "/minions/static/media/message.9077373a74db7a057946.webp",
+    "static/media/hey.webp": "/minions/static/media/hey.d749f55fe54c7da53b8b.webp",
+    "static/media/pirates.mp3": "/minions/static/media/pirates.9d5aaa03865d4ff78512.mp3",
+    "static/media/kiss.webp": "/minions/static/media/kiss.4592e8d22c94401bb362.webp",
+    "static/media/soundOfWonder.mp3": "/minions/static/media/soundOfWonder.7ecfa708e45ab0bb01a4.mp3",
+    "index.html": "/minions/index.html",
+    "main.ff1c216e.css.map": "/minions/static/css/main.ff1c216e.css.map",
+    "main.4280e790.js.map": "/minions/static/js/main.4280e790.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff1c216e.css",
+    "static/js/main.4280e790.js"
+  ]
+}
