@@ -24,7 +24,9 @@ function App() {
 
   // if (window.onblur) {
   //   audioRef.current.pause()
-  // } else {
+  // }
+
+  // if (window.onfocus) {
   //   audioRef.current.play()
   // }
 

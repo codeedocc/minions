@@ -59,7 +59,7 @@ function EndingSong() {
             <audio src={FinalSong} ref={audioRef} loop></audio>
           </div>
           <div className="main-buttons">
-            <span onClick={() => navigate('/minions/KissEnd')}>Okay</span>
+            <span onClick={() => navigate('/minions/KissEnd')}>АУФ...</span>
             &nbsp; &nbsp; &nbsp;
             <span
               onClick={() => navigate('/minions/FinalFight')}
