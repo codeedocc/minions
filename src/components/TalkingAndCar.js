@@ -90,7 +90,7 @@ function TalkingAndCar() {
               <span onClick={() => changeMusic()}>ВАЛИМ ВАЛИМ ВАЛИМ НА...</span>
             )}
             &nbsp; &nbsp; &nbsp;
-            <span onClick={() => nextStep()} style={{ fontSize: '20px' }}>
+            <span onClick={() => nextStep()}>
               Ну и шарманка... Мы скоро приедем?
             </span>
           </div>
