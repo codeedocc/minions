@@ -19,6 +19,7 @@ function GuitarPlay() {
 
   const playOrPause = () => {
     setIsPlaying((prev) => !prev)
+    window.scrollTo(0, 0)
 
     if (!isPlaying) {
       audioRef.current.play()

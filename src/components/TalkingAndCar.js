@@ -28,6 +28,7 @@ function TalkingAndCar() {
 
   const letsRide = () => {
     setIsStarted((prev) => !prev)
+    window.scrollTo(0, 0)
   }
 
   const changeMusic = () => {
