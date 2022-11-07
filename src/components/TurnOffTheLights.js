@@ -63,7 +63,7 @@ function TurnOffTheLights() {
         <div className="main">
           <h3>Пляшем пляшем!</h3>
           <hr></hr>
-          <img src={Stas} style={{ height: '400px' }}></img>
+          <img src={Stas} className="picture"></img>
           <hr></hr>
           <div className="main-text">
             <span>Как тебе мой костюм Стаса Михайлова? 💃</span>
