@@ -14,20 +14,21 @@ import TalkingBeforeRide from './components/TalkingBeforeRide'
 import EndingSong from './components/EndingSong'
 import FinalFight from './components/FinalFight'
 import KissEnd from './components/KissEnd'
-import { useDispatch, useSelector } from 'react-redux'
+import Sleep from './components/Sleep'
+import { useSelector } from 'react-redux'
 import FinalSong from './assets/finalSong.mp3'
 
 function App() {
   const song = useSelector((state) => state.song.song)
   const audioRef = useRef()
 
-  useEffect(() => {
-    if (song) {
-      setTimeout(() => {
-        audioRef.current.play()
-      }, 5000)
-    }
-  }, [song])
+  // useEffect(() => {
+  //   if (song) {
+  //     setTimeout(() => {
+  //       audioRef.current.play()
+  //     }, 5000)
+  //   }
+  // }, [song])
 
   return (
     <div>
@@ -63,6 +64,7 @@ function App() {
           <Route path="/minions/EndingSong" element={<EndingSong />}></Route>
           <Route path="/minions/FinalFight" element={<FinalFight />}></Route>
           <Route path="/minions/KissEnd" element={<KissEnd />}></Route>
+          <Route path="/minions/Sleep" element={<Sleep />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

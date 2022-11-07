@@ -29,15 +29,24 @@ function FinalFight() {
           <img className="picture" src={Argue}></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
-            <span>Чтож...</span>
+            <span>А ты вспыльчивая 😂</span>
           </div>
           <div className="main-buttons">
-            <span onClick={() => final()}>Пока :)</span>
+            <span onClick={() => final()}>Будешь знать, засранец</span>
           </div>
         </div>
       ) : (
-        <div className="main" style={{ paddingTop: '15%' }}>
+        <div className="main">
+          <h3>Хватит на сегодня</h3>
+          <hr></hr>
           <img className="picture" src={Kiss}></img>
+          <hr style={{ marginTop: '25px' }}></hr>
+          <div className="main-text">
+            <span>Было весело, не сердись. Пошли спать</span>
+          </div>
+          <div className="main-buttons">
+            <span onClick={() => navigate('/minions/Sleep')}>Пошли</span>
+          </div>
         </div>
       )}
     </div>

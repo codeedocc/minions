@@ -47,7 +47,7 @@ function EndingSong() {
         </div>
       ) : (
         <div className="main">
-          <h3>Конец</h3>
+          <h3>Время цитат</h3>
           <hr></hr>
           <img className="picture" src={Heart}></img>
           <hr style={{ marginTop: '25px' }}></hr>
@@ -63,9 +63,9 @@ function EndingSong() {
             &nbsp; &nbsp; &nbsp;
             <span
               onClick={() => navigate('/minions/FinalFight')}
-              style={{ fontSize: '20px' }}
+              style={{ fontSize: '15px' }}
             >
-              Ты шо дебил, ради этого мы сюда ехали? Сейчас я тебе устрою...
+              Ты шо дебил, пабликов перечитал? Сейчас я тебе устрою...
             </span>
           </div>
         </div>
