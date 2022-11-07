@@ -16,7 +16,7 @@ function WelcomePage() {
   return (
     <div className="container">
       <div className="main">
-        <h3>Привет</h3>
+        <h3>ПриветЫЫЫЫЫЫЫ</h3>
         <hr></hr>
         <img className="picture" src={Hey}></img>
         <hr style={{ marginTop: '25px' }}></hr>
