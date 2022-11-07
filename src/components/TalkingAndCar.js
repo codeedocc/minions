@@ -59,8 +59,8 @@ function TalkingAndCar() {
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>
-              Значит так - у меня нет прав и вообще я не очень хорошо вижу
-              дорогу, но ты не бойся. Ехать будем с ветерком и с музычкой
+              Значит так - я живу тут не далеко, но у меня нет прав и вообще я
+              не очень хорошо вижу дорогу, но ты не бойся, прокатимся с ветерком
             </span>
             <audio src={FastCar} ref={audioRefJonas} loop></audio>
             <audio src={Gelendwagen} ref={audioRefGelik} loop></audio>
@@ -81,7 +81,7 @@ function TalkingAndCar() {
               Если хочешь, можешь переключить трек
             </span>
             <audio src={FastCar} ref={audioRefJonas} loop></audio>
-            <audio src={Gelendwagen} ref={audioRefGelik}></audio>
+            <audio src={Gelendwagen} ref={audioRefGelik} loop></audio>
           </div>
           <div className="main-buttons">
             {isPlaying ? (
@@ -90,8 +90,8 @@ function TalkingAndCar() {
               <span onClick={() => changeMusic()}>ВАЛИМ ВАЛИМ ВАЛИМ НА...</span>
             )}
             &nbsp; &nbsp; &nbsp;
-            <span onClick={() => nextStep()}>
-              Я устала слушать эту шарманку, мы скоро приедем?
+            <span onClick={() => nextStep()} style={{ fontSize: '20px' }}>
+              Ну и шарманка... Мы скоро приедем?
             </span>
           </div>
         </div>

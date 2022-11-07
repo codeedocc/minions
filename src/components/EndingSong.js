@@ -61,7 +61,10 @@ function EndingSong() {
           <div className="main-buttons">
             <span onClick={() => navigate('/minions/KissEnd')}>Okay</span>
             &nbsp; &nbsp; &nbsp;
-            <span onClick={() => navigate('/minions/FinalFight')}>
+            <span
+              onClick={() => navigate('/minions/FinalFight')}
+              style={{ fontSize: '20px' }}
+            >
               Ты шо дебил, ради этого мы сюда ехали? Сейчас я тебе устрою...
             </span>
           </div>

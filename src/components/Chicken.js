@@ -2,14 +2,17 @@ import React, { useRef, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Kurica from '../assets/chicken.webp'
 import { useSelector } from 'react-redux'
+import ChickenSound from '../assets/chickenSound.mp3'
 
 function Chicken() {
   const navigate = useNavigate()
   const scroll = useSelector((state) => state.scroll.scroll)
+  const audioRef = useRef()
 
   useEffect(() => {
     if (scroll) {
       window.scrollTo(0, 0)
+      audioRef.current.play()
     }
   }, [scroll])
 
@@ -25,6 +28,7 @@ function Chicken() {
             Кукареку. Мы находимся в волшебном мире, твои слова имеют силу, так
             что, пожалуйста, будь аккуратнее. Может всё-таки я сыграю?
           </span>
+          <audio src={ChickenSound} ref={audioRef}></audio>
         </div>
         <div className="main-buttons">
           <span onClick={() => navigate('/minions/GuitarPlay')}>

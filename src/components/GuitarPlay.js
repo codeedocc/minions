@@ -4,12 +4,16 @@ import StartGuitar from '../assets/startGuitar.webp'
 import PlayingGuitar from '../assets/playingGuitar.webp'
 import PiratesSong from '../assets/pirates.mp3'
 import { useSelector } from 'react-redux'
+import BeforeGuitar from '../assets/soundBeforeGuitar.mp3'
 
 function GuitarPlay() {
   const [isPlaying, setIsPlaying] = useState(false)
   const navigate = useNavigate()
   const audioRef = useRef()
+  const audioRefBefore = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {}, [scroll])
 
   useEffect(() => {
     if (scroll) {
@@ -60,7 +64,7 @@ function GuitarPlay() {
           <img className="picture" src={PlayingGuitar}></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
-            <span>🎶🎶🎶🎵🎶🎶🎵🎶🎶🎵🎶🎶🎶 Нравится??</span>
+            <span>🎶🎶🎶 Ну шо скажешь, тебе нравится??</span>
             <audio src={PiratesSong} ref={audioRef}></audio>
           </div>
           <div className="main-buttons">
