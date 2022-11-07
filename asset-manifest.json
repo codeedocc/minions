@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minions/static/css/main.ee419d46.css",
-    "main.js": "/minions/static/js/main.7990a13d.js",
+    "main.css": "/minions/static/css/main.4ee8c17b.css",
+    "main.js": "/minions/static/js/main.ad8a90e8.js",
     "static/media/beforeRide.gif": "/minions/static/media/beforeRide.eda8352c46f25be626a9.gif",
     "static/media/dadju.mp3": "/minions/static/media/dadju.4a7b5570eeecc3431fc1.mp3",
     "static/media/stasMikhailov.gif": "/minions/static/media/stasMikhailov.96157671bdc7d0fda321.gif",
@@ -26,6 +26,7 @@
     "static/media/talk.webp": "/minions/static/media/talk.2f6c296a6b253777e98e.webp",
     "static/media/message.webp": "/minions/static/media/message.9077373a74db7a057946.webp",
     "static/media/hey.webp": "/minions/static/media/hey.d749f55fe54c7da53b8b.webp",
+    "static/media/sadViolin.mp3": "/minions/static/media/sadViolin.612902a698d46f217138.mp3",
     "static/media/pirates.mp3": "/minions/static/media/pirates.9d5aaa03865d4ff78512.mp3",
     "static/media/kiss.webp": "/minions/static/media/kiss.4592e8d22c94401bb362.webp",
     "static/media/soundOfWonder.mp3": "/minions/static/media/soundOfWonder.7ecfa708e45ab0bb01a4.mp3",
@@ -33,11 +34,11 @@
     "static/media/chickenSound.mp3": "/minions/static/media/chickenSound.fabcd7180ffe7896f325.mp3",
     "static/media/maleSigh.mp3": "/minions/static/media/maleSigh.63f18789cf1305978abf.mp3",
     "index.html": "/minions/index.html",
-    "main.ee419d46.css.map": "/minions/static/css/main.ee419d46.css.map",
-    "main.7990a13d.js.map": "/minions/static/js/main.7990a13d.js.map"
+    "main.4ee8c17b.css.map": "/minions/static/css/main.4ee8c17b.css.map",
+    "main.ad8a90e8.js.map": "/minions/static/js/main.ad8a90e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee419d46.css",
-    "static/js/main.7990a13d.js"
+    "static/css/main.4ee8c17b.css",
+    "static/js/main.ad8a90e8.js"
   ]
 }
