@@ -77,7 +77,7 @@ function TalkingAndCar() {
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>
-              Не обращай внимание на тряску, представь что мы на аттракционе :)
+              Не обращай внимание на тряску, представь, что мы на аттракционе :)
               Если хочешь, можешь переключить трек
             </span>
             <audio src={FastCar} ref={audioRefJonas} loop></audio>
