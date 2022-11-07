@@ -18,6 +18,7 @@ function FinalFight() {
 
   const final = () => {
     setIsDone((prev) => !prev)
+    window.scrollTo(0, 0)
   }
 
   return (

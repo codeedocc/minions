@@ -22,6 +22,12 @@ function App() {
   const song = useSelector((state) => state.song.song)
   const audioRef = useRef()
 
+  // if (window.onblur) {
+  //   audioRef.current.pause()
+  // } else {
+  //   audioRef.current.play()
+  // }
+
   useEffect(() => {
     if (song) {
       setTimeout(() => {

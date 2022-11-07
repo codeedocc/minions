@@ -1,11 +1,9 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import GoToBed from '../assets/sleep.gif'
 import { useSelector } from 'react-redux'
 
 function Sleep() {
-  const navigate = useNavigate()
-  const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
 
   useEffect(() => {
