@@ -20,26 +20,35 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<WelcomePage />} />
-          <Route path="/NoWelcomePage" element={<NoWelcomePage />} />
-          <Route path="/YesWelcomePage" element={<YesWelcomePage />} />
+          <Route path="/minions" element={<WelcomePage />} />
+          <Route path="/minions/NoWelcomePage" element={<NoWelcomePage />} />
+          <Route path="/minions/YesWelcomePage" element={<YesWelcomePage />} />
           <Route
-            path="/TurnOffTheLights"
+            path="/minions/TurnOffTheLights"
             element={<TurnOffTheLights />}
           ></Route>
-          <Route path="/RoadToGuitar" element={<RoadToGuitar />}></Route>
-          <Route path="/Chicken" element={<Chicken />}></Route>
-          <Route path="/GuitarPlay" element={<GuitarPlay />}></Route>
-          <Route path="/Joke" element={<Joke />}></Route>
-          <Route path="/DestroyGuitar" element={<DestroyGuitar />}></Route>
           <Route
-            path="/TalkingBeforeRide"
+            path="/minions/RoadToGuitar"
+            element={<RoadToGuitar />}
+          ></Route>
+          <Route path="/minions/Chicken" element={<Chicken />}></Route>
+          <Route path="/minions/GuitarPlay" element={<GuitarPlay />}></Route>
+          <Route path="/minions/Joke" element={<Joke />}></Route>
+          <Route
+            path="/minions/DestroyGuitar"
+            element={<DestroyGuitar />}
+          ></Route>
+          <Route
+            path="/minions/TalkingBeforeRide"
             element={<TalkingBeforeRide />}
           ></Route>
-          <Route path="/TalkingAndCar" element={<TalkingAndCar />}></Route>
-          <Route path="/EndingSong" element={<EndingSong />}></Route>
-          <Route path="/FinalFight" element={<FinalFight />}></Route>
-          <Route path="/KissEnd" element={<KissEnd />}></Route>
+          <Route
+            path="/minions/TalkingAndCar"
+            element={<TalkingAndCar />}
+          ></Route>
+          <Route path="/minions/EndingSong" element={<EndingSong />}></Route>
+          <Route path="/minions/FinalFight" element={<FinalFight />}></Route>
+          <Route path="/minions/KissEnd" element={<KissEnd />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

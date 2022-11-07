@@ -37,7 +37,7 @@ function TurnOffTheLights() {
             <audio src={Music} ref={audioRef}></audio>
             <span onClick={() => playOrPause()}>Включить трек</span>
             &nbsp; &nbsp; &nbsp;
-            <span onClick={() => navigate('/RoadToGuitar')}>Мда</span>
+            <span onClick={() => navigate('/minions/RoadToGuitar')}>Мда</span>
           </div>
         </div>
       ) : (

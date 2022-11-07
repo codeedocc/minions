@@ -22,7 +22,7 @@ function GuitarPlay() {
   const nextStep = () => {
     setIsPlaying(false)
 
-    navigate('/Joke')
+    navigate('/minions/Joke')
   }
 
   return (

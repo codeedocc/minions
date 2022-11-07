@@ -16,11 +16,11 @@ function NoWelcomePage() {
           <span></span>
         </div>
         <div className="main-buttons">
-          <span onClick={() => navigate('/theme')}></span>
+          <span onClick={() => navigate('/minions/theme')}></span>
           &nbsp; &nbsp; &nbsp;
-          <span onClick={() => navigate('/theme')}></span>
+          <span onClick={() => navigate('/minions/theme')}></span>
           &nbsp; &nbsp; &nbsp;
-          <span onClick={() => navigate('/theme')}></span>
+          <span onClick={() => navigate('/minions/theme')}></span>
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ function Joke() {
           <audio src={SoundOfWonder} ref={audioRef}></audio>
         </div>
         <div className="main-buttons">
-          <span onClick={() => navigate('/DestroyGuitar')}>
+          <span onClick={() => navigate('/minions/DestroyGuitar')}>
             Нет. Ломай гитару
           </span>
         </div>

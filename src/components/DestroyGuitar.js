@@ -29,7 +29,7 @@ function DestroyGuitar() {
           <audio src={DirectedBy} ref={audioRef}></audio>
         </div>
         <div className="main-buttons">
-          <span onClick={() => navigate('/TalkingBeforeRide')}>
+          <span onClick={() => navigate('/minions/TalkingBeforeRide')}>
             Может ты умеешь что-то еще?
           </span>
         </div>

@@ -40,7 +40,7 @@ function EndingSong() {
   const nextStep = () => {
     setIsPlaying(false)
 
-    navigate('/EndingSong')
+    navigate('/minions/EndingSong')
   }
 
   return (
@@ -77,9 +77,9 @@ function EndingSong() {
             <audio src={FinalSong} ref={audioRefJonas} loop></audio>
           </div>
           <div className="main-buttons">
-            <span onClick={() => navigate('/KissEnd')}>Okay</span>
+            <span onClick={() => navigate('/minions/KissEnd')}>Okay</span>
             &nbsp; &nbsp; &nbsp;
-            <span onClick={() => navigate('/FinalFight')}>
+            <span onClick={() => navigate('/minions/FinalFight')}>
               Ты шо дебил, ради этого мы сюда ехали? Сейчас я тебе устрою...
             </span>
           </div>

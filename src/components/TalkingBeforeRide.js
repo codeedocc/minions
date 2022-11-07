@@ -21,7 +21,9 @@ function TalkingBeforeRide() {
           </span>
         </div>
         <div className="main-buttons">
-          <span onClick={() => navigate('/TalkingAndCar')}>Хорошо, обещаю</span>
+          <span onClick={() => navigate('/minions/TalkingAndCar')}>
+            Хорошо, обещаю
+          </span>
         </div>
       </div>
     </div>

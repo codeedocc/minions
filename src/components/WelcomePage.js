@@ -19,9 +19,13 @@ function WelcomePage() {
           </span>
         </div>
         <div className="main-buttons">
-          <span onClick={() => navigate('/YesWelcomePage')}>Да, конечно!</span>
+          <span onClick={() => navigate('/minions/YesWelcomePage')}>
+            Да, конечно!
+          </span>
           &nbsp; &nbsp; &nbsp;
-          <span onClick={() => navigate('/NoWelcomePage')}>Гуляй, сынок</span>
+          <span onClick={() => navigate('/minions/NoWelcomePage')}>
+            Гуляй, сынок
+          </span>
           &nbsp; &nbsp; &nbsp;
         </div>
       </div>

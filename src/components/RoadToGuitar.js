@@ -19,7 +19,7 @@ function RoadToGuitar() {
           </span>
         </div>
         <div className="main-buttons">
-          <span onClick={() => navigate('/Chicken')}>Удиви, петух</span>
+          <span onClick={() => navigate('/minions/Chicken')}>Удиви, петух</span>
         </div>
       </div>
     </div>

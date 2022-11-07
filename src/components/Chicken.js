@@ -19,7 +19,7 @@ function Chicken() {
           </span>
         </div>
         <div className="main-buttons">
-          <span onClick={() => navigate('/GuitarPlay')}>
+          <span onClick={() => navigate('/minions/GuitarPlay')}>
             Ладно, доставай свою гитару. Но если мне не понравится...
           </span>
         </div>

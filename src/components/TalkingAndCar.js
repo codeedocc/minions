@@ -37,7 +37,7 @@ function TalkingAndCar() {
   const nextStep = () => {
     setIsPlaying(false)
 
-    navigate('/EndingSong')
+    navigate('/minions/EndingSong')
   }
 
   return (

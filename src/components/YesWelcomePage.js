@@ -51,7 +51,7 @@ function YesWelcomePage() {
             </span>
           </div>
           <div className="main-buttons">
-            <span onClick={() => navigate('/TurnOffTheLights')}>
+            <span onClick={() => navigate('/minions/TurnOffTheLights')}>
               Давай выберем что-нибудь
             </span>
           </div>
