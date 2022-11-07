@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Dj from '../assets/music.webp'
 import Stas from '../assets/stasMikhailov.gif'
@@ -8,9 +8,17 @@ function TurnOffTheLights() {
   const [isPlaying, setIsPlaying] = useState(false)
   const navigate = useNavigate()
   const audioRef = useRef()
+  const [onPage, setOnPage] = useState(true)
+
+  useEffect(() => {
+    if (onPage) {
+      window.scrollTo(0, 0)
+    }
+  }, [onPage])
 
   const playOrPause = () => {
     setIsPlaying((prev) => !prev)
+    window.scrollTo(0, 0)
 
     if (!isPlaying) {
       audioRef.current.play()

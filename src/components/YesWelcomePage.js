@@ -9,9 +9,17 @@ function YesWelcomePage() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const color = useSelector((state) => state.theme.theme)
+  const [onPage, setOnPage] = useState(true)
+
+  useEffect(() => {
+    if (onPage) {
+      window.scrollTo(0, 0)
+    }
+  }, [onPage])
 
   function themeHandler() {
     dispatch(changeTheme())
+    window.scrollTo(0, 0)
   }
 
   useEffect(() => {
