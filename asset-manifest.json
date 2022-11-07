@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minions/static/css/main.07478399.css",
-    "main.js": "/minions/static/js/main.ffface5b.js",
+    "main.css": "/minions/static/css/main.3eba5f01.css",
+    "main.js": "/minions/static/js/main.fb372f04.js",
     "static/media/beforeRide.gif": "/minions/static/media/beforeRide.eda8352c46f25be626a9.gif",
     "static/media/dadju.mp3": "/minions/static/media/dadju.4a7b5570eeecc3431fc1.mp3",
     "static/media/stasMikhailov.gif": "/minions/static/media/stasMikhailov.96157671bdc7d0fda321.gif",
@@ -34,11 +34,11 @@
     "static/media/chickenSound.mp3": "/minions/static/media/chickenSound.fabcd7180ffe7896f325.mp3",
     "static/media/maleSigh.mp3": "/minions/static/media/maleSigh.63f18789cf1305978abf.mp3",
     "index.html": "/minions/index.html",
-    "main.07478399.css.map": "/minions/static/css/main.07478399.css.map",
-    "main.ffface5b.js.map": "/minions/static/js/main.ffface5b.js.map"
+    "main.3eba5f01.css.map": "/minions/static/css/main.3eba5f01.css.map",
+    "main.fb372f04.js.map": "/minions/static/js/main.fb372f04.js.map"
   },
   "entrypoints": [
-    "static/css/main.07478399.css",
-    "static/js/main.ffface5b.js"
+    "static/css/main.3eba5f01.css",
+    "static/js/main.fb372f04.js"
   ]
 }
