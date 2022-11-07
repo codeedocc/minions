@@ -13,8 +13,13 @@ function EndingSong() {
   const audioRefJonas = useRef()
   const dispatch = useDispatch()
   const song = useSelector((state) => state.song.song)
+  const scroll = useSelector((state) => state.scroll.scroll)
 
-  console.log(song)
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   // useEffect(() => {
   //   if (!isPlaying) {

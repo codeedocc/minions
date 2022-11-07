@@ -1,9 +1,17 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Please from '../assets/please.gif'
+import { useSelector } from 'react-redux'
 
 function NoWelcomePage() {
   const navigate = useNavigate()
+  const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   return (
     <div className="container">

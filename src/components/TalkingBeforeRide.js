@@ -1,10 +1,17 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Talk from '../assets/talk.webp'
-import SoundOfWonder from '../assets/soundOfWonder.mp3'
+import { useSelector } from 'react-redux'
 
 function TalkingBeforeRide() {
   const navigate = useNavigate()
+  const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   return (
     <div className="container">

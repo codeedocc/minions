@@ -4,6 +4,7 @@ import Riding from '../assets/riding.gif'
 import BeforeRide from '../assets/beforeRide.gif'
 import FastCar from '../assets/fastCar.mp3'
 import Gelendwagen from '../assets/gelendwagen.mp3'
+import { useSelector } from 'react-redux'
 
 function TalkingAndCar() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -11,6 +12,13 @@ function TalkingAndCar() {
   const navigate = useNavigate()
   const audioRefJonas = useRef()
   const audioRefGelik = useRef()
+  const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   useEffect(() => {
     if (!isPlaying) {

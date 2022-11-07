@@ -2,11 +2,19 @@ import React, { useRef, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Destroy from '../assets/destroy.webp'
 import DirectedBy from '../assets/directerBy.mp3'
+import { useSelector } from 'react-redux'
 
 function DestroyGuitar() {
   const navigate = useNavigate()
   const [isPranked, setIsPranked] = useState(true)
   const audioRef = useRef()
+  const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   useEffect(() => {
     if (isPranked) {

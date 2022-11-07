@@ -3,10 +3,18 @@ import { useNavigate } from 'react-router-dom'
 import Argue from '../assets/argue.gif'
 import Kiss from '../assets/kiss.webp'
 import SoundOfWonder from '../assets/soundOfWonder.mp3'
+import { useSelector } from 'react-redux'
 
 function FinalFight() {
   const navigate = useNavigate()
   const [isDone, setIsDone] = useState(true)
+  const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   const final = () => {
     setIsDone((prev) => !prev)

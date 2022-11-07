@@ -3,11 +3,19 @@ import { useNavigate } from 'react-router-dom'
 import StartGuitar from '../assets/startGuitar.webp'
 import PlayingGuitar from '../assets/playingGuitar.webp'
 import PiratesSong from '../assets/pirates.mp3'
+import { useSelector } from 'react-redux'
 
 function GuitarPlay() {
   const [isPlaying, setIsPlaying] = useState(false)
   const navigate = useNavigate()
   const audioRef = useRef()
+  const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   const playOrPause = () => {
     setIsPlaying((prev) => !prev)

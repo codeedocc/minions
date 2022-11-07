@@ -3,18 +3,19 @@ import { useNavigate } from 'react-router-dom'
 import Dj from '../assets/music.webp'
 import Stas from '../assets/stasMikhailov.gif'
 import Music from '../assets/dadju.mp3'
+import { useSelector } from 'react-redux'
 
 function TurnOffTheLights() {
   const [isPlaying, setIsPlaying] = useState(false)
   const navigate = useNavigate()
   const audioRef = useRef()
-  const [onPage, setOnPage] = useState(true)
+  const scroll = useSelector((state) => state.scroll.scroll)
 
   useEffect(() => {
-    if (onPage) {
+    if (scroll) {
       window.scrollTo(0, 0)
     }
-  }, [onPage])
+  }, [scroll])
 
   const playOrPause = () => {
     setIsPlaying((prev) => !prev)

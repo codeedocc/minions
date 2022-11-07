@@ -1,9 +1,17 @@
 import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Kurica from '../assets/chicken.webp'
+import { useSelector } from 'react-redux'
 
 function Chicken() {
   const navigate = useNavigate()
+  const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   return (
     <div className="container">

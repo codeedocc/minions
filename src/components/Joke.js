@@ -2,11 +2,19 @@ import React, { useRef, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Wonder from '../assets/wonder.webp'
 import SoundOfWonder from '../assets/soundOfWonder.mp3'
+import { useSelector } from 'react-redux'
 
 function Joke() {
   const navigate = useNavigate()
   const [isWondered, setIsWondered] = useState(true)
   const audioRef = useRef()
+  const scroll = useSelector((state) => state.scroll.scroll)
+
+  useEffect(() => {
+    if (scroll) {
+      window.scrollTo(0, 0)
+    }
+  }, [scroll])
 
   useEffect(() => {
     if (isWondered) {
