@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/minions/static/css/main.ee419d46.css",
-    "main.js": "/minions/static/js/main.50cf07cf.js",
+    "main.js": "/minions/static/js/main.7990a13d.js",
     "static/media/beforeRide.gif": "/minions/static/media/beforeRide.eda8352c46f25be626a9.gif",
     "static/media/dadju.mp3": "/minions/static/media/dadju.4a7b5570eeecc3431fc1.mp3",
     "static/media/stasMikhailov.gif": "/minions/static/media/stasMikhailov.96157671bdc7d0fda321.gif",
     "static/media/fastCar.mp3": "/minions/static/media/fastCar.ef90b139dc731a2474ad.mp3",
     "static/media/finalSong.mp3": "/minions/static/media/finalSong.ab90cb7ea07371597b91.mp3",
     "static/media/heart.gif": "/minions/static/media/heart.10df3b53328bcc207ea1.gif",
+    "static/media/sleep.gif": "/minions/static/media/sleep.bcba7b202b03778af034.gif",
     "static/media/chicken.webp": "/minions/static/media/chicken.069832390a169704b920.webp",
     "static/media/scharf.gif": "/minions/static/media/scharf.2d174ce64ca5c6cc4509.gif",
     "static/media/please.gif": "/minions/static/media/please.3e209968a36adf0f4d4d.gif",
@@ -33,10 +34,10 @@
     "static/media/maleSigh.mp3": "/minions/static/media/maleSigh.63f18789cf1305978abf.mp3",
     "index.html": "/minions/index.html",
     "main.ee419d46.css.map": "/minions/static/css/main.ee419d46.css.map",
-    "main.50cf07cf.js.map": "/minions/static/js/main.50cf07cf.js.map"
+    "main.7990a13d.js.map": "/minions/static/js/main.7990a13d.js.map"
   },
   "entrypoints": [
     "static/css/main.ee419d46.css",
-    "static/js/main.50cf07cf.js"
+    "static/js/main.7990a13d.js"
   ]
 }
