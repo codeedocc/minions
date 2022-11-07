@@ -84,3 +84,10 @@ code {
   height: 300px;
   width: 100%;
 }
+
+.theEnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30%;
+}

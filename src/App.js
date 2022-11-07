@@ -22,13 +22,13 @@ function App() {
   const song = useSelector((state) => state.song.song)
   const audioRef = useRef()
 
-  // useEffect(() => {
-  //   if (song) {
-  //     setTimeout(() => {
-  //       audioRef.current.play()
-  //     }, 5000)
-  //   }
-  // }, [song])
+  useEffect(() => {
+    if (song) {
+      setTimeout(() => {
+        audioRef.current.play()
+      }, 5000)
+    }
+  }, [song])
 
   return (
     <div>

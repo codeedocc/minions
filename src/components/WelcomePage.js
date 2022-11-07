@@ -13,6 +13,13 @@ function WelcomePage() {
     }
   }, [scroll])
 
+  const chooseNo = () => {
+    const youSure = window.confirm('Послать его нахер?')
+    if (youSure) {
+      navigate('/minions/NoWelcomePage')
+    }
+  }
+
   return (
     <div className="container">
       <div className="main">
@@ -31,9 +38,7 @@ function WelcomePage() {
             Да, конечно!
           </span>
           &nbsp; &nbsp; &nbsp;
-          <span onClick={() => navigate('/minions/NoWelcomePage')}>
-            Гуляй, сынок
-          </span>
+          <span onClick={() => chooseNo()}>Гуляй, сынок</span>
           &nbsp; &nbsp; &nbsp;
         </div>
       </div>
