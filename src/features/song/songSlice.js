@@ -9,7 +9,7 @@ export const songSlice = createSlice({
   initialState,
   reducers: {
     startSong: (state, action) => {
-      state.song = true
+      state.song = !state.song
     },
   },
 })

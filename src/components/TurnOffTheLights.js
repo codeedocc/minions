@@ -66,7 +66,7 @@ function TurnOffTheLights() {
           <img src={Stas} className="picture"></img>
           <hr></hr>
           <div className="main-text">
-            <span>Как тебе мой костюм Стаса Михайлова? 💃</span>
+            <span>Как тебе моя грива? 🐴</span>
           </div>
           <div className="main-buttons">
             <audio src={Music} ref={audioRef}></audio>

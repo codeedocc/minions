@@ -12,17 +12,30 @@ function EndingSong() {
   const audioRef = useRef()
   const dispatch = useDispatch()
   const scroll = useSelector((state) => state.scroll.scroll)
+  const song = useSelector((state) => state.song.song)
+
+  const nextPage = () => {
+    if (!song) {
+      alert('Сначала включи музыку :)')
+    } else {
+      setIsStarted((prev) => !prev)
+      window.scrollTo(0, 0)
+    }
+  }
 
   useEffect(() => {
     if (scroll) {
       window.scrollTo(0, 0)
-      dispatch(startSong())
     }
   }, [scroll])
 
-  const letsRide = () => {
-    setIsStarted((prev) => !prev)
-    window.scrollTo(0, 0)
+  // const letsRide = () => {
+  //   setIsStarted((prev) => !prev)
+  //   window.scrollTo(0, 0)
+  // }
+
+  const turnOnMusic = () => {
+    dispatch(startSong())
   }
 
   return (
@@ -36,13 +49,19 @@ function EndingSong() {
           <div className="main-text">
             <span>
               Вот это поездочка... Ладно, слушай. Побудь пока тут, я выйду на
-              улицу. Сейчас заиграет музыка, когда услышишь в ней слова,
-              посмотри в окно.
+              улицу. Когда дочитаешь это сообщение - включи музыку, а потом,
+              когда услышишь слова, посмотри в окно.
             </span>
             <audio src={FinalSong} ref={audioRef} loop></audio>
           </div>
           <div className="main-buttons">
-            <span onClick={() => letsRide()}>Посмотреть в окно</span>
+            {song ? (
+              <span onClick={() => turnOnMusic()}>Выключить музыку</span>
+            ) : (
+              <span onClick={() => turnOnMusic()}>Включить музыку</span>
+            )}
+            &nbsp; &nbsp; &nbsp;
+            <span onClick={() => nextPage()}>Посмотреть в окно</span>
           </div>
         </div>
       ) : (

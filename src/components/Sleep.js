@@ -1,16 +1,24 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import GoToBed from '../assets/sleep.gif'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { startSong } from '../features/song/songSlice'
 
 function Sleep() {
+  const navigate = useNavigate()
   const scroll = useSelector((state) => state.scroll.scroll)
+  const dispatch = useDispatch()
+  const song = useSelector((state) => state.song.song)
 
   useEffect(() => {
     if (scroll) {
       window.scrollTo(0, 0)
     }
   }, [scroll])
+
+  const theEnd = () => {
+    dispatch(startSong())
+  }
 
   return (
     <div className="container">
@@ -21,6 +29,17 @@ function Sleep() {
         <hr style={{ marginTop: '25px' }}></hr>
         <div className="main-text">
           <span>Можешь закинуть на меня ногу 😂</span>
+        </div>
+        <div className="main-buttons">
+          {song ? (
+            <span onClick={() => theEnd()}>
+              Спокойной ночи (выключить музыку)
+            </span>
+          ) : (
+            <span onClick={() => theEnd()}>
+              Спокойной ночи (включить музыку)
+            </span>
+          )}
         </div>
       </div>
     </div>
