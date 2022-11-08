@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minions/static/css/main.07874eff.css",
-    "main.js": "/minions/static/js/main.6811be52.js",
+    "main.css": "/minions/static/css/main.454ba538.css",
+    "main.js": "/minions/static/js/main.cc1e5929.js",
     "static/media/beforeRide.gif": "/minions/static/media/beforeRide.eda8352c46f25be626a9.gif",
     "static/media/dadju.mp3": "/minions/static/media/dadju.4a7b5570eeecc3431fc1.mp3",
     "static/media/stasMikhailov.gif": "/minions/static/media/stasMikhailov.96157671bdc7d0fda321.gif",
@@ -30,15 +30,14 @@
     "static/media/pirates.mp3": "/minions/static/media/pirates.9d5aaa03865d4ff78512.mp3",
     "static/media/kiss.webp": "/minions/static/media/kiss.4592e8d22c94401bb362.webp",
     "static/media/soundOfWonder.mp3": "/minions/static/media/soundOfWonder.7ecfa708e45ab0bb01a4.mp3",
-    "static/media/soundBeforeGuitar.mp3": "/minions/static/media/soundBeforeGuitar.01b78461772bde91ddb4.mp3",
     "static/media/chickenSound.mp3": "/minions/static/media/chickenSound.fabcd7180ffe7896f325.mp3",
     "static/media/maleSigh.mp3": "/minions/static/media/maleSigh.63f18789cf1305978abf.mp3",
     "index.html": "/minions/index.html",
-    "main.07874eff.css.map": "/minions/static/css/main.07874eff.css.map",
-    "main.6811be52.js.map": "/minions/static/js/main.6811be52.js.map"
+    "main.454ba538.css.map": "/minions/static/css/main.454ba538.css.map",
+    "main.cc1e5929.js.map": "/minions/static/js/main.cc1e5929.js.map"
   },
   "entrypoints": [
-    "static/css/main.07874eff.css",
-    "static/js/main.6811be52.js"
+    "static/css/main.454ba538.css",
+    "static/js/main.cc1e5929.js"
   ]
 }
