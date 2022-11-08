@@ -61,7 +61,7 @@ function TurnOffTheLights() {
         </div>
       ) : (
         <div className="main">
-          <h3>Пляшем пляшем!</h3>
+          <h3>Пляшем!</h3>
           <hr></hr>
           <img src={Stas} className="picture"></img>
           <hr></hr>

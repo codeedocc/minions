@@ -76,7 +76,7 @@ function EndingSong() {
             <span onClick={() => navigate('/minions/KissEnd')}>АУФ...</span>
             &nbsp; &nbsp; &nbsp;
             <span onClick={() => navigate('/minions/FinalFight')}>
-              Ты шо дебил, пабликов перечитал? Сейчас я тебе устрою...
+              Ты шо, дебил, пабликов перечитал? Сейчас я тебе устрою...
             </span>
           </div>
         </div>
