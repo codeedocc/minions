@@ -39,7 +39,6 @@ function WelcomePage() {
           </span>
           &nbsp; &nbsp; &nbsp;
           <span onClick={() => chooseNo()}>Гуляй, сынок</span>
-          &nbsp; &nbsp; &nbsp;
         </div>
       </div>
     </div>
