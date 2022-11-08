@@ -48,7 +48,7 @@ function YesWelcomePage() {
         </div>
       ) : (
         <div className="main">
-          <h3>Укутаемся потеплее</h3>
+          <h3>Укутаемся</h3>
           <hr></hr>
           <img className="picture" src={Scharf}></img>
           <hr style={{ marginTop: '25px' }}></hr>
