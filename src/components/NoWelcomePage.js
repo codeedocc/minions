@@ -5,10 +5,10 @@ import SadViolin from '../assets/sadViolin.mp3'
 import { useSelector } from 'react-redux'
 
 function NoWelcomePage() {
-  const navigate = useNavigate()
-  const scroll = useSelector((state) => state.scroll.scroll)
-  const audioRef = useRef()
   const [decision, setDecision] = useState(true)
+  const navigate = useNavigate()
+  const audioRef = useRef()
+  const scroll = useSelector((state) => state.scroll.scroll)
 
   useEffect(() => {
     if (scroll) {

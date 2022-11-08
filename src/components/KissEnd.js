@@ -4,8 +4,8 @@ import Kiss from '../assets/kiss.webp'
 import { useNavigate } from 'react-router-dom'
 
 function KissEnd() {
-  const scroll = useSelector((state) => state.scroll.scroll)
   const navigate = useNavigate()
+  const scroll = useSelector((state) => state.scroll.scroll)
 
   useEffect(() => {
     if (scroll) {

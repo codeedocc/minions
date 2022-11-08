@@ -7,10 +7,10 @@ import { useSelector } from 'react-redux'
 
 function TurnOffTheLights() {
   const [isPlaying, setIsPlaying] = useState(false)
+  const [isListened, setIsListened] = useState(false)
   const navigate = useNavigate()
   const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
-  const [isListened, setIsListened] = useState(false)
 
   const nextPage = () => {
     if (!isListened) {

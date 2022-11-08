@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Mda from '../assets/mda.gif'
 import { useSelector } from 'react-redux'

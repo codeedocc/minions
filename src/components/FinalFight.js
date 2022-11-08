@@ -1,13 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Argue from '../assets/argue.gif'
 import Kiss from '../assets/kiss.webp'
-import SoundOfWonder from '../assets/soundOfWonder.mp3'
 import { useSelector } from 'react-redux'
 
 function FinalFight() {
-  const navigate = useNavigate()
   const [isDone, setIsDone] = useState(true)
+  const navigate = useNavigate()
   const scroll = useSelector((state) => state.scroll.scroll)
 
   useEffect(() => {

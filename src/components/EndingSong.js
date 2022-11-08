@@ -29,11 +29,6 @@ function EndingSong() {
     }
   }, [scroll])
 
-  // const letsRide = () => {
-  //   setIsStarted((prev) => !prev)
-  //   window.scrollTo(0, 0)
-  // }
-
   const turnOnMusic = () => {
     dispatch(startSong())
   }

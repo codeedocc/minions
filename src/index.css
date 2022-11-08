@@ -27,7 +27,6 @@ code {
 
 .main-text > span {
   border-radius: 20px;
-  /* width: 600px; */
   width: 100%;
   background: rgb(255, 255, 255);
   color: black;
@@ -36,7 +35,6 @@ code {
   padding-right: 20px;
   padding-top: 4px;
   box-shadow: 0px 0px 5px #607d8b;
-  /* height: 100%; */
   word-break: break-word;
   min-height: 100px;
   max-height: 100px;
@@ -47,10 +45,6 @@ code {
 }
 
 .main-buttons {
-  /* padding-top: 5%;
-  text-align: center;
-  top: 400px;
-  display: flex; */
   padding-top: 2%;
   text-align: center;
   display: flex;
@@ -60,9 +54,6 @@ code {
 
 .main-buttons > span {
   border-radius: 20px;
-  /* width: 400px; */
-  /* min-height: 200px;
-  max-height: 200px; */
   width: 100%;
   background: rgb(249, 252, 98);
   color: black;
@@ -74,7 +65,6 @@ code {
   box-shadow: 0px 0px 5px #607d8b;
   min-height: 120px;
   max-height: 120px;
-  /* height: 100%; */
   word-break: break-word;
   align-items: center;
   justify-content: center;
@@ -83,6 +73,10 @@ code {
 }
 
 .main-buttons > span:hover {
+  background: rgb(249, 253, 1);
+}
+
+.main-buttons > span:active {
   background: rgb(249, 253, 1);
 }
 

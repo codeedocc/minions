@@ -4,16 +4,12 @@ import StartGuitar from '../assets/startGuitar.webp'
 import PlayingGuitar from '../assets/playingGuitar.webp'
 import PiratesSong from '../assets/pirates.mp3'
 import { useSelector } from 'react-redux'
-import BeforeGuitar from '../assets/soundBeforeGuitar.mp3'
 
 function GuitarPlay() {
   const [isPlaying, setIsPlaying] = useState(false)
   const navigate = useNavigate()
   const audioRef = useRef()
-  const audioRefBefore = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
-
-  useEffect(() => {}, [scroll])
 
   useEffect(() => {
     if (scroll) {

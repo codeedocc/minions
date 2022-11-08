@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
 import GoToBed from '../assets/sleep.gif'
 import { useDispatch, useSelector } from 'react-redux'
 import { startSong } from '../features/song/songSlice'
 
 function Sleep() {
-  const navigate = useNavigate()
   const scroll = useSelector((state) => state.scroll.scroll)
-  const dispatch = useDispatch()
   const song = useSelector((state) => state.song.song)
+  const dispatch = useDispatch()
 
   useEffect(() => {
     if (scroll) {
