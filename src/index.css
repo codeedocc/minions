@@ -64,7 +64,7 @@ code {
   /* min-height: 200px;
   max-height: 200px; */
   width: 100%;
-  background: rgb(243, 245, 108);
+  background: rgb(249, 252, 98);
   color: black;
   font-size: 12px;
   padding-left: 20px;
@@ -79,6 +79,11 @@ code {
   align-items: center;
   justify-content: center;
   display: flex;
+  cursor: pointer;
+}
+
+.main-buttons > span:hover {
+  background: rgb(249, 253, 1);
 }
 
 .picture {
