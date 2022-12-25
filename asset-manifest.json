@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/minions/static/css/main.f30118e9.css",
+    "main.css": "/minions/static/css/main.a609cead.css",
     "main.js": "/minions/static/js/main.e58306c5.js",
     "static/media/beforeRide.gif": "/minions/static/media/beforeRide.eda8352c46f25be626a9.gif",
     "static/media/dadju.mp3": "/minions/static/media/dadju.4a7b5570eeecc3431fc1.mp3",
@@ -33,11 +33,11 @@
     "static/media/chickenSound.mp3": "/minions/static/media/chickenSound.fabcd7180ffe7896f325.mp3",
     "static/media/maleSigh.mp3": "/minions/static/media/maleSigh.63f18789cf1305978abf.mp3",
     "index.html": "/minions/index.html",
-    "main.f30118e9.css.map": "/minions/static/css/main.f30118e9.css.map",
+    "main.a609cead.css.map": "/minions/static/css/main.a609cead.css.map",
     "main.e58306c5.js.map": "/minions/static/js/main.e58306c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.f30118e9.css",
+    "static/css/main.a609cead.css",
     "static/js/main.e58306c5.js"
   ]
 }
