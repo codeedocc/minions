@@ -1,20 +1,16 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Kurica from '../assets/chicken.webp'
 import { useSelector } from 'react-redux'
 import ChickenSound from '../assets/chickenSound.mp3'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function Chicken() {
   const navigate = useNavigate()
   const scroll = useSelector((state) => state.scroll.scroll)
   const audioRef = useRef()
 
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-      audioRef.current.play()
-    }
-  }, [scroll])
+  usePageScroller(scroll, audioRef)
 
   return (
     <div className="container">

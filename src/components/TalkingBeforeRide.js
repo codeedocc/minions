@@ -1,17 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Talk from '../assets/talk.webp'
 import { useSelector } from 'react-redux'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function TalkingBeforeRide() {
   const navigate = useNavigate()
   const scroll = useSelector((state) => state.scroll.scroll)
 
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-    }
-  }, [scroll])
+  usePageScroller(scroll)
 
   return (
     <div className="container">

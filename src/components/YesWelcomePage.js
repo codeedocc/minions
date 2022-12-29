@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { changeTheme } from '../features/theme/themeSlice'
 import Scharf from '../assets/scharf.gif'
 import Happy from '../assets/hello.gif'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function YesWelcomePage() {
   const navigate = useNavigate()
@@ -11,11 +12,7 @@ function YesWelcomePage() {
   const color = useSelector((state) => state.theme.theme)
   const scroll = useSelector((state) => state.scroll.scroll)
 
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-    }
-  }, [scroll])
+  usePageScroller(scroll)
 
   function themeHandler() {
     dispatch(changeTheme())

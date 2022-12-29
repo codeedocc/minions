@@ -1,10 +1,11 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Message from '../assets/message.webp'
 import Heart from '../assets/heart.gif'
 import FinalSong from '../assets/finalSong.mp3'
 import { useDispatch, useSelector } from 'react-redux'
 import { startSong } from '../features/song/songSlice'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function EndingSong() {
   const [isStarted, setIsStarted] = useState(false)
@@ -14,6 +15,8 @@ function EndingSong() {
   const scroll = useSelector((state) => state.scroll.scroll)
   const song = useSelector((state) => state.song.song)
 
+  usePageScroller(scroll)
+
   const nextPage = () => {
     if (!song) {
       alert('Сначала включи музыку :)')
@@ -22,12 +25,6 @@ function EndingSong() {
       window.scrollTo(0, 0)
     }
   }
-
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-    }
-  }, [scroll])
 
   const turnOnMusic = () => {
     dispatch(startSong())

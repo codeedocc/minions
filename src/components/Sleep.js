@@ -1,18 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import GoToBed from '../assets/sleep.gif'
 import { useDispatch, useSelector } from 'react-redux'
 import { startSong } from '../features/song/songSlice'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function Sleep() {
   const scroll = useSelector((state) => state.scroll.scroll)
   const song = useSelector((state) => state.song.song)
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-    }
-  }, [scroll])
+  usePageScroller(scroll)
 
   const theEnd = () => {
     dispatch(startSong())

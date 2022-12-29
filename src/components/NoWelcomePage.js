@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Please from '../assets/please.gif'
 import SadViolin from '../assets/sadViolin.mp3'
 import { useSelector } from 'react-redux'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function NoWelcomePage() {
   const [decision, setDecision] = useState(true)
@@ -10,12 +11,7 @@ function NoWelcomePage() {
   const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
 
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-      audioRef.current.play()
-    }
-  }, [scroll])
+  usePageScroller(scroll, audioRef)
 
   const sayNo = () => {
     setDecision(false)

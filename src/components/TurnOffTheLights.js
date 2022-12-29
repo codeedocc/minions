@@ -1,9 +1,10 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Dj from '../assets/music.webp'
 import Stas from '../assets/stasMikhailov.gif'
 import Music from '../assets/dadju.mp3'
 import { useSelector } from 'react-redux'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function TurnOffTheLights() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -12,6 +13,8 @@ function TurnOffTheLights() {
   const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
 
+  usePageScroller(scroll)
+
   const nextPage = () => {
     if (!isListened) {
       alert('Давай не будем обижать Желтка, послушай его трек 👿')
@@ -19,12 +22,6 @@ function TurnOffTheLights() {
       navigate('/minions/RoadToGuitar')
     }
   }
-
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-    }
-  }, [scroll])
 
   const playOrPause = () => {
     setIsPlaying((prev) => !prev)

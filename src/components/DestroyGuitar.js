@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Destroy from '../assets/destroy.webp'
 import DirectedBy from '../assets/directerBy.mp3'
 import { useSelector } from 'react-redux'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function DestroyGuitar() {
   const navigate = useNavigate()
@@ -10,11 +11,7 @@ function DestroyGuitar() {
   const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
 
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-    }
-  }, [scroll])
+  usePageScroller(scroll)
 
   useEffect(() => {
     if (isPranked) {

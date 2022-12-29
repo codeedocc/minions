@@ -1,9 +1,10 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import StartGuitar from '../assets/startGuitar.webp'
 import PlayingGuitar from '../assets/playingGuitar.webp'
 import PiratesSong from '../assets/pirates.mp3'
 import { useSelector } from 'react-redux'
+import { usePageScroller } from '../hooks/pageScroller'
 
 function GuitarPlay() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -11,11 +12,7 @@ function GuitarPlay() {
   const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
 
-  useEffect(() => {
-    if (scroll) {
-      window.scrollTo(0, 0)
-    }
-  }, [scroll])
+  usePageScroller(scroll)
 
   const playOrPause = () => {
     setIsPlaying((prev) => !prev)
