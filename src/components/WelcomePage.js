@@ -22,7 +22,7 @@ function WelcomePage() {
       <div className="main">
         <h3>Привет</h3>
         <hr></hr>
-        <img className="picture" src={Hey}></img>
+        <img className="picture" src={Hey} alt="Приветствие"></img>
         <hr style={{ marginTop: '25px' }}></hr>
         <div className="main-text">
           <span>

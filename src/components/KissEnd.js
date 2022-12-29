@@ -15,7 +15,7 @@ function KissEnd() {
       <div className="main">
         <h3>Хватит на сегодня</h3>
         <hr></hr>
-        <img className="picture" src={Kiss}></img>
+        <img className="picture" src={Kiss} alt="Идём спать"></img>
         <hr style={{ marginTop: '25px' }}></hr>
         <div className="main-text">
           <span>

@@ -31,7 +31,7 @@ function YesWelcomePage() {
         <div className="main">
           <h3>Класс!</h3>
           <hr></hr>
-          <img className="picture" src={Happy}></img>
+          <img className="picture" src={Happy} alt="Радость"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>
@@ -47,7 +47,7 @@ function YesWelcomePage() {
         <div className="main">
           <h3>Укутаемся</h3>
           <hr></hr>
-          <img className="picture" src={Scharf}></img>
+          <img className="picture" src={Scharf} alt="Обнимашки"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>

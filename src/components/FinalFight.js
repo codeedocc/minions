@@ -23,7 +23,7 @@ function FinalFight() {
         <div className="main">
           <h3>Ну бывает</h3>
           <hr></hr>
-          <img className="picture" src={Argue}></img>
+          <img className="picture" src={Argue} alt="Драка"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>А ты вспыльчивая 😂</span>
@@ -36,7 +36,7 @@ function FinalFight() {
         <div className="main">
           <h3>Хватит на сегодня</h3>
           <hr></hr>
-          <img className="picture" src={Kiss}></img>
+          <img className="picture" src={Kiss} alt="Идём спать"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>Было весело, не сердись. Пошли спать</span>

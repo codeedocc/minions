@@ -37,7 +37,7 @@ function GuitarPlay() {
         <div className="main">
           <h3>Вот она, моя любимая...</h3>
           <hr></hr>
-          <img className="picture" src={StartGuitar}></img>
+          <img className="picture" src={StartGuitar} alt="Гитара"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>
@@ -54,7 +54,11 @@ function GuitarPlay() {
         <div className="main">
           <h3>Как же он чувствует</h3>
           <hr></hr>
-          <img className="picture" src={PlayingGuitar}></img>
+          <img
+            className="picture"
+            src={PlayingGuitar}
+            alt="Игра на гитаре"
+          ></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>🎶🎶🎶 Ну шо скажешь, тебе нравится??</span>

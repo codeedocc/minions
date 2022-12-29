@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Destroy from '../assets/destroy.webp'
 import DirectedBy from '../assets/directerBy.mp3'
@@ -7,24 +7,17 @@ import { usePageScroller } from '../hooks/pageScroller'
 
 function DestroyGuitar() {
   const navigate = useNavigate()
-  const [isPranked, setIsPranked] = useState(true)
   const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
 
-  usePageScroller(scroll)
-
-  useEffect(() => {
-    if (isPranked) {
-      audioRef.current.play()
-    }
-  }, [isPranked])
+  usePageScroller(scroll, audioRef)
 
   return (
     <div className="container">
       <div className="main">
         <h3>Directed by Robert B. Weide</h3>
         <hr></hr>
-        <img className="picture" src={Destroy}></img>
+        <img className="picture" src={Destroy} alt="Разбили гитару"></img>
         <hr style={{ marginTop: '25px' }}></hr>
         <div className="main-text">
           <span>Ведьма... Зачем ты так со мной? Она была мне дорога 😭</span>

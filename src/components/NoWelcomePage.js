@@ -23,7 +23,7 @@ function NoWelcomePage() {
         <div className="main">
           <h3>Отказ</h3>
           <hr></hr>
-          <img className="picture" src={Please}></img>
+          <img className="picture" src={Please} alt="Грусть"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>Может всё-таки да?</span>

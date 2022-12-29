@@ -41,7 +41,7 @@ function TurnOffTheLights() {
         <div className="main">
           <h3>DJ Желток</h3>
           <hr></hr>
-          <img src={Dj} className="picture"></img>
+          <img src={Dj} className="picture" alt="Диджей Желток"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>
@@ -60,7 +60,7 @@ function TurnOffTheLights() {
         <div className="main">
           <h3>Пляшем!</h3>
           <hr></hr>
-          <img src={Stas} className="picture"></img>
+          <img src={Stas} className="picture" alt="Танцы"></img>
           <hr></hr>
           <div className="main-text">
             <span>Как тебе моя грива? 🐴</span>

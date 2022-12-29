@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Wonder from '../assets/wonder.webp'
 import SoundOfWonder from '../assets/soundOfWonder.mp3'
@@ -7,24 +7,17 @@ import { usePageScroller } from '../hooks/pageScroller'
 
 function Joke() {
   const navigate = useNavigate()
-  const [isWondered, setIsWondered] = useState(true)
   const audioRef = useRef()
   const scroll = useSelector((state) => state.scroll.scroll)
 
-  usePageScroller(scroll)
-
-  useEffect(() => {
-    if (isWondered) {
-      audioRef.current.play()
-    }
-  }, [isWondered])
+  usePageScroller(scroll, audioRef)
 
   return (
     <div className="container">
       <div className="main">
         <h3>Правда?</h3>
         <hr></hr>
-        <img className="picture" src={Wonder}></img>
+        <img className="picture" src={Wonder} alt="Радость"></img>
         <hr style={{ marginTop: '25px' }}></hr>
         <div className="main-text">
           <span>Тебе правда понравилось???</span>

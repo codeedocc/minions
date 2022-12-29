@@ -52,7 +52,7 @@ function TalkingAndCar() {
         <div className="main">
           <h3>Ночная поездка</h3>
           <hr></hr>
-          <img className="picture" src={BeforeRide}></img>
+          <img className="picture" src={BeforeRide} alt="Поездочка"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>
@@ -70,7 +70,7 @@ function TalkingAndCar() {
         <div className="main">
           <h3>Маленький Шумахер</h3>
           <hr></hr>
-          <img className="picture" src={Riding}></img>
+          <img className="picture" src={Riding} alt="Тряска"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>

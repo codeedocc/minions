@@ -20,7 +20,7 @@ function Sleep() {
       <div className="main">
         <h3>Спокойной ночи</h3>
         <hr></hr>
-        <img className="picture" src={GoToBed}></img>
+        <img className="picture" src={GoToBed} alt="Сон"></img>
         <hr style={{ marginTop: '25px' }}></hr>
         <div className="main-text">
           <span>Можешь закинуть на меня ногу 😂</span>

@@ -36,7 +36,7 @@ function EndingSong() {
         <div className="main">
           <h3>Мы на месте</h3>
           <hr></hr>
-          <img className="picture" src={Message}></img>
+          <img className="picture" src={Message} alt="Ухожу на улицу"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>
@@ -60,7 +60,7 @@ function EndingSong() {
         <div className="main">
           <h3>Время цитат</h3>
           <hr></hr>
-          <img className="picture" src={Heart}></img>
+          <img className="picture" src={Heart} alt="Цитата"></img>
           <hr style={{ marginTop: '25px' }}></hr>
           <div className="main-text">
             <span>

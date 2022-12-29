@@ -17,7 +17,7 @@ function Chicken() {
       <div className="main">
         <h3>За что?</h3>
         <hr></hr>
-        <img className="picture" src={Kurica}></img>
+        <img className="picture" src={Kurica} alt="Цыплёнок"></img>
         <hr style={{ marginTop: '25px' }}></hr>
         <div className="main-text">
           <span>
