@@ -1,1 +1,1 @@
-https://codeedocc.github.io/minions/
+Проект: https://codeedocc.github.io/minions/
